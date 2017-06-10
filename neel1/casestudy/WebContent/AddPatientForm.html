@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Staff Form</title>
+<style>
+body{
+margin-top:50px;
+margin-left:400px;
+
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+	width:50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1> Patient Details</h1>
+
+<div class="container">
+
+
+  <form method="get" action="AddPatientServlet">
+
+	<label for="appid">Application ID</label>
+    <input type="text" id="appid" name="appid"  placeholder="Application ID.." required>
+    
+    <label for="pno">Enter Prescription Number</label>
+    <input type="text" id="pno" name="pno"placeholder="enter prescription number.."required>
+    
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname"   placeholder="Your name.."required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname"   placeholder="Your last name.."required>
+
+	<label for="age">Age</label>
+    <input type="text" id="age" name="age"   placeholder="Age.."required>
+  
+    <br>Gender:<br>
+   <input type="radio" name="gender" value="male"> Male
+   <input type="radio" name="gender" value="female"> Female<br><br>
+
+    
+	<label for="address">Address</label>
+	<textarea name="add" rows="4" cols="50"required></textarea>
+	 
+    <label for="contactno">Contact Number</label>
+    <input type="text" id="mobileno" name="mobileno" placeholder="Your mobile no.."required>
+  
+    Date Of Birth:
+    <input type="date" name="dob" required><br><br>
+
+	<label for="docname">Doctor name</label>
+    <input type="text" id="docname" name="docname" placeholder="Your doctor name.."required>
+
+	
+    
+
+	<label for="reason">Reason</label>
+    <input type="text" id="reason" name="reason" required><br>
+
+    <br><input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+
+
+ select appid,firstname,lastname,age,dob,mobileno,pno,docname,amt from testDatabase t,booking b where t.tid=b.fk_tid and b.bid='B100';
+
+create table dcemployee(eid varchar2(20) primary key,ename varchar2(20) not null,epass varchar2(20) not null,ejob varchar2(10));
+
+create table booking(bid varchar2(10) primary key,fk_appid varchar2(20) references PatientAppForm(appid),fk_tid varchar2(20) references testDatabase(tid),date_of_booking varchar2(10) not null);
+
+
+ select appid,firstname,lastname,age,dob,mobileno,pno,docname,amt from testDatabase t,booking b,PatientAppForm p where fk_appid=p.appid and t.tid=b.fk_tid and b.bid='B100';
+
+
+
+select amt from booking b,testDatabase t where t.tid=b.fk_tid and b.bid='B100';
+
+select amt from booking b,testDatabase t where t.tid=b.fk_tid and b.bid=?"
+
+
+1) select appid,firstname,lastname,age,dob,mobileno from PatientAppForm p,booking b where b.fk_appid=p.appid and b.bid='B100';
+
+2)select pno,docname from PatientAppForm p,booking b where b.fk_appid=p.appid and b.bid='B100';
+
+3)select tname,amt from booking b,testDatabase t where t.tid=b.fk_tid and b.bid='B100';

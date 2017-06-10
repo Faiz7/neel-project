@@ -1,0 +1,83 @@
+@CHARSET "ISO-8859-1";
+input[type=text] {
+    width: 120%;
+    height: 100%
+}
+
+input[type=password] {
+    width: 120%;
+    height: 1000%
+}
+
+select {
+    width: 120%;
+     
+}
+
+textarea {
+    width: 120%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+p {
+    text-shadow: 2px 2px 5px red;
+    font-size: 140%;
+}
+
+td
+{
+    color:black;
+    font-size: 7mm;
+}
+
+table#table1 {
+     
+    margin-top:5%; 
+    
+    
+  }
+  
+  a:link {
+    text-decoration: none;
+    color:#ff0000;
+}
+
+a:visited {
+    text-decoration: none;
+    color:#0000ff;
+}
+
+a:hover {
+    text-decoration: blink;
+    font-size:150%;
+}
+
+a:active {
+    text-decoration: blink;
+}
+  
+  table#table2 {
+     
+    margin-top:10%; 
+    
+  }
+  td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+  
+  body{
+  background-repeat: no-repeat;
+
+  }
+  
+  a#a1{
+  size:8mm;
+  color: white;
+  
+  }-1";

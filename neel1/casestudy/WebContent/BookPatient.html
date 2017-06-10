@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Patient</title>
+<style>
+.button {
+   background-color: #071C29;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<!-- <form method="get" action="BookAPatient"> -->
+
+
+<form method="get" action="BookAPatient">
+	
+    
+    <label for="appid">Application ID</label>
+    <input type="text" id="appid" name="appid" placeholder="Application ID..">
+    
+    <label for="tid">Test ID</label>
+    <input type="text" id="tid" name="tid" placeholder="Test ID..">
+    
+     Date Of Appointment:
+    <input type="date" name="dob" >
+    
+    Time of Appointment:<select name="hh">
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+  
+</select>
+
+
+<select name="mm">
+<option value="00">00</option>
+<option value="15">15</option>
+<option value="30">30</option>
+<option value="45">45</option>
+
+  </select>
+    <br><br>
+    
+    
+    <br><br>
+    
+ <a href="http://10.10.86.174:7001/WebContent/PatientDetails.jsp" class="button">click here to application aid</a>
+<br><br>
+
+
+<a href="http://10.10.86.174:7001/WebContent/ViewTests.jsp" class="button">click here to get Test ID</a>
+<br><br>
+
+
+    
+
+    <br><input type="submit" value="Submit">
+  </form>
+</body>
+</html>
